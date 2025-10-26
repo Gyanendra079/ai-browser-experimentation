@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Browser</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="/static/script.js" defer></script>
+    <link rel="stylesheet" href="/static/styles.css">    
+</head>
+<body>
+    <h1>AI Browser Experimentation</h1>
+    
+    <section>
+        <h3>Tensorflow.js in Browser Inference</h3>
+        <button onclick="runModel()">Run AI Inference</button>
+        <p id="tf-result"></p>
+    </section>
+
+    <section>
+        <h3>Ask the OpenAI Assistant</h3>
+        <textarea id="prompt" rows="3" cols="50" placeholder="Ask anything..."></textarea><br>
+        <button onclick="askOpenAI()">Generate Response</button>
+        <p id="ai-response"></p>
+    </section>
+</body>
+</html>
